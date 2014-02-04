@@ -135,7 +135,7 @@ class $CLASSNAME$ extends Migration {
 	public function up()
 	{
 	    // create table
-	    Schema::create('$TABLENAME$', function(Blueprint $table) {
+	    \Schema::create('$TABLENAME$', function(Blueprint $table) {
             $table->increments('id');
             $END$
             $table->timestamps();
@@ -143,7 +143,7 @@ class $CLASSNAME$ extends Migration {
             		
 		/*
 		// modify table
-		Schema::table('$TABLENAME$', function(Blueprint $table) {
+		\Schema::table('$TABLENAME$', function(Blueprint $table) {
 			// alter
 		});
 		*/
@@ -157,11 +157,11 @@ class $CLASSNAME$ extends Migration {
 	public function down()
 	{
 	    // drop table
-	    Schema::drop('$TABLENAME$');
+	    \Schema::drop('$TABLENAME$');
 	    
 	    /*
 	    // modify table
-		Schema::table('$TABLENAME$', function(Blueprint $table) {
+		\Schema::table('$TABLENAME$', function(Blueprint $table) {
 			// alter
 		});
 		*/
