@@ -5,7 +5,7 @@ Grab the `Laravel.xml` file and put it to PHPStorm templates dir.
 
 * For mac: `~/Libraries/Preferences/WebIde70/templates`
 * For win: `%USERPROFILE%\.WebIde70\config\templates`
-* For linux: `~/.WebIde70`
+* For linux: `~/.WebIde70/config/templates`
 
 ##Included
 
