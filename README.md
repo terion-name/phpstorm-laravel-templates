@@ -13,6 +13,7 @@ Grab the `Laravel.xml` file and put it to PHPStorm templates dir.
 * [Model](#model)
 * [Migration](#migration)
 * [Seeder](#seeder)
+* [Service Provider](#service-provider)
 
 ###Resource controller
 abbr: `resource`
@@ -184,6 +185,57 @@ class $CLASSNAME$ extends \Seeder {
 	    // DB::table('$TABLE$')->truncate();
 	    // DB::table('$TABLE$')->insert($data);
 	}
+
+}
+```
+
+###Service Provider
+abbr: `sp`
+```php
+use Illuminate\Support\ServiceProvider;
+
+class $CLASSNAME$ extends ServiceProvider {
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $END$// TODO: Implement register() method.
+    }
+
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return parent::provides();
+    }
+
+    /**
+     * Get the events that trigger this service provider to register.
+     *
+     * @return array
+     */
+    public function when()
+    {
+        return parent::when();
+    }
+
 
 }
 ```

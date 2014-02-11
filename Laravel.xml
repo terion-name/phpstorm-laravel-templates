@@ -91,5 +91,27 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="sp" value="use Illuminate\Support\ServiceProvider;&#10;&#10;class $CLASSNAME$ extends ServiceProvider {&#10;&#10;    /**&#10;     * Register the service provider.&#10;     *&#10;     * @return void&#10;     */&#10;    public function register()&#10;    {&#10;        $END$// TODO: Implement register() method.&#10;    }&#10;&#10;    /**&#10;     * Bootstrap the application events.&#10;     *&#10;     * @return void&#10;     */&#10;    public function boot()&#10;    {&#10;        parent::boot();&#10;    }&#10;&#10;    /**&#10;     * Get the services provided by the provider.&#10;     *&#10;     * @return array&#10;     */&#10;    public function provides()&#10;    {&#10;        return parent::provides();&#10;    }&#10;&#10;    /**&#10;     * Get the events that trigger this service provider to register.&#10;     *&#10;     * @return array&#10;     */&#10;    public function when()&#10;    {&#10;        return parent::when();&#10;    }&#10;&#10;&#10;}" description="Generate ServiceProvider" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 
