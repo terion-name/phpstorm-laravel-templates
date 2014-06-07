@@ -100,22 +100,22 @@ class $CLASSNAME$ extends \BaseController {
 ###Model
 abbr: `model`
 ```php
-class $CLASSNAME$ extends \Eloquent {
-    
-    protected $softDelete = true;
-    
-    public $timestamps = true;
-    
-    // Fields that are guarded from mass assignment
-	  protected $guarded = array('id');
-	
-	  // Fields that are opened for mass assignment
-	  // protected $fillable = array();
+	use Eloquent;
+	use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-	  protected function getDates() {
-	    return parent::getDates();
-	  }
-}
+	class $CLASSNAME$ extends Eloquent {
+	    use SoftDeletingTrait;
+	    
+	    public $timestamps = true;
+	    
+	    // Fields that are guarded from mass assignment
+		//protected $guarded = array('id');
+		
+		// Fields that are opened for mass assignment
+		protected $fillable = array();
+
+		protected $dates = ['deleted_at'];
+	}
 ```
 
 ###Migration
